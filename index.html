@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d923307493.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Andrés Vilá Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <button class="header__toggle" aria-label="toggle navigation">
+        <span class="header__hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html#intro">Intro</a></li>
+          <li class="nav__item"><a href="index.html#about">About me</a></li>
+          <li class="nav__item"><a href="index.html#projects">Projects</a></li>
+          <li class="nav__item"><a href="index.html#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="intro">
+      <h1 class="intro__title">
+        Hello, I am <strong>Andrés</strong>
+        <span class="intro__subtitle">...and this is my portfolio</span>
+      </h1>
+      <p class="intro__tag">Front-End Developer</p>
+      <img src="/img/yo2022.png" alt="" class="intro__img" width="400em" />
+
+      <h2 class="intro__connect">Let´s connect!</h2>
+      <ul class="intro__list">
+        <li class="intro__item">
+          <a class="intro__link" onClick="copyEmail()">
+            <i class="fa-solid fa-square-envelope"></i>
+          </a>
+        </li>
+
+        <li class="intro__item">
+          <a class="intro__link" target="_blank" href="https://wa.link/hqr1cc">
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </a>
+        </li>
+
+        <li class="intro__item">
+          <a
+            class="intro__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/andresviladev/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="intro__item">
+          <a
+            class="intro__link"
+            target="_blank"
+            href="https://github.com/thecandybars"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About me -->
+    <section class="about" id="about">
+      <h2 class="about__title">About me</h2>
+      <p class="about__tag">
+        Web developer and audio engineer based in Bogotá, Colombia
+      </p>
+      <div class="about__text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem at,
+          deserunt atque repellat asperiores repellendus temporibus mollitia
+          voluptates architecto sunt nam incidunt et a dolorum aliquid
+          perspiciatis doloribus molestiae sint.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem at,
+          deserunt atque repellat asperiores repellendus temporibus mollitia
+          voluptates architecto sunt nam incidunt et a dolorum aliquid
+          perspiciatis doloribus molestiae sint.
+        </p>
+      </div>
+      <img src="./img/coding.jpg" alt="" class="about__img" />
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2 class="projects__title">Projects</h2>
+      <p class="projects__subtitle">Some of my projects</p>
+      <div class="projects__list">
+        <!-- Portfolio item 01 -->
+        <div class="projects__item">
+          <a
+            href="https://meme-factory-roan.vercel.app/"
+            target="_blank"
+            class="projects__link"
+          >
+            <img src="img/portfolio-01.jpg" alt="" class="projects__img" />
+          </a>
+          <p>
+            <strong>Meme Factory </strong>is a simple app made in React for
+            memes design. <br />It allows the user to select an image from a
+            variety of classic memes, add and edit text properties, and download
+            the final image.
+          </p>
+        </div>
+
+        <!-- Portfolio item 02 -->
+        <div class="projects__item">
+          <a
+            href="https://nftickets.netlify.app/"
+            target="_blank"
+            class="projects__link"
+          >
+            <img src="img/portfolio-02.jpg" alt="" class="projects__img" />
+          </a>
+
+          <p>
+            <strong>NFTickets </strong>is an events marketplace based on a
+            blockchain that delivers the tickets as NFTs. <br />Users can
+            explore, search and select among musical, theatre and sport events,
+            and even upload it´s own event to the blockchain.
+          </p>
+        </div>
+
+        <!-- Portfolio item 03 -->
+        <div class="projects__item">
+          <a
+            href="https://world-wide-countries-app.vercel.app/"
+            target="_blank"
+            class="projects__link"
+          >
+            <img src="img/portfolio-03.jpg" alt="" class="projects__img" />
+          </a>
+          <p>
+            <strong>World Wide Countries </strong>is a SPA coded with React that
+            displays basic information about world countries.<br />Consumes data
+            from a public API to build it´s own database.
+          </p>
+        </div>
+
+        <!-- Portfolio item 04 -->
+        <div class="projects__item">
+          <a href="#" target="_blank" class="projects__link">
+            <img src="img/portfolio-04.jpg" alt="" class="projects__img" />
+          </a>
+          <p>
+            <strong>Iceberg synth </strong>is a digital sound synthesizer built
+            upon an Arduino using the Mozzi library.<br />The oscillator is an
+            original design, capable of producing digital noise, fully tunable
+            by the user. <br />Its sound can be shaped by a state variable
+            filter and an envelope-controlled amplifier.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h1 class="skills__title">Skills</h1>
+      <p class="skills__subtitle">
+        I have worked on projects of software development using these
+        programming languages, libraries and frameworks
+      </p>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img src="./img/javascript_icon.png" class="skills__img" />
+          <p class="skills__text">Javascript</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/react_icon.png" class="skills__img" />
+          <p class="skills__text">React</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/redux_icon.png" class="skills__img" />
+          <p class="skills__text">Redux</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/nextjs_icon.png" class="skills__img" />
+          <p class="skills__text">NextJS</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/html_icon.png" class="skills__img" />
+          <p class="skills__text">HTML5</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/nodejs_icon.png" class="skills__img" />
+          <p class="skills__text">NodeJS</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/css_icon.png" class="skills__img" />
+          <p class="skills__text">CSS3</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/expressjs_icon.png" class="skills__img" />
+          <p class="skills__text">ExpressJS</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/sequelize_icon.png" class="skills__img" />
+          <p class="skills__text">Sequelize</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/postgresql_icon.png" class="skills__img" />
+          <p class="skills__text">PostgreSQL</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/git_icon.png" class="skills__img" />
+          <p class="skills__text">Git</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/arduino_icon.png" class="skills__img" />
+          <p class="skills__text">Arduino</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/processing_icon.png" class="skills__img" />
+          <p class="skills__text">Processing</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/max_icon.png" class="skills__img" />
+          <p class="skills__text">Max</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/pd_icon.png" class="skills__img" />
+          <p class="skills__text">Pure Data</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/dbase_icon.png" class="skills__img" />
+          <p class="skills__text">dBase IV</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- <h2>Let´s connect!</h2> -->
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" onClick="copyEmail()">
+            <i class="fa-solid fa-square-envelope"></i>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a class="footer__link" target="_blank" href="https://wa.link/hqr1cc">
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/andresviladev/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            target="_blank"
+            href="https://github.com/thecandybars"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
