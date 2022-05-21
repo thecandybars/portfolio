@@ -273,7 +273,6 @@ h3 {
   padding: 50px 10%;
   background-color: var(--color-accent);
   background-image: url(../img/towers.jpeg);
-  /* background-image: url(../img/towers.jpeg); */
   background-blend-mode: multiply;
   background-size: cover;
   color: var(--color-light);
@@ -284,10 +283,10 @@ h3 {
   margin: 3em auto 0.5em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1500px) {
   .about {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 600px;
     grid-template-rows: auto min-content auto;
     grid-template-areas:
       "title img"
@@ -309,12 +308,12 @@ h3 {
     width: 90%;
     padding-left: 1em;
     /* padding-right: 250px; */
-    padding-right: calc(400px - 6em);
+    padding-right: calc(600px - 6em);
     /* padding-right: image -  grid-column-gap; */
   }
   .about__img {
     grid-area: img;
-    width: 400px;
+    width: 600px;
     position: relative;
     z-index: 2;
   }
