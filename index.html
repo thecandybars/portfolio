@@ -12,7 +12,15 @@
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Andrés Vilá Portfolio</title>
   </head>
   <body>
@@ -85,33 +93,65 @@
       <div class="about__text">
         <p>
           Hi, my name is Andrés Vilá. I ́m 45 years old and have worked almost
-          all my life as an audio engineer and an educator.
+          all my life as an audio engineer and an educator. But the common
+          denominator among all my interest has always been software
+          programming.
         </p>
-        <p>
-          Since I was a kid I ́ve been curious for programming languages and all
-          this time I orbited around programming in different ways : at 12 years
-          old I was coding my first text-based video games using Basic; I worked
-          on my college years as a database programmer for my father ́s company;
-          my undergraduate thesis (I studied Film) was a multimedia cd-rom
-          fictional story; my masters degree (audio engineering) thesis was a
-          software midi controller (it translated computer vision information
-          into midi messages); the last 8 years I developed a personal brand of
-          music synthesizers called “Sintetizadores para todos!” (Synthesizers
-          for everybody!) creating hardware electronic musical instruments both
-          analog and digital (using Arduino boards).
-        </p>
+        <ul>
+          <li>
+            At 12 years old I was coding my first text-based video games using
+            Basic.
+          </li>
+          <li>
+            I worked on my college years as a database programmer for my family
+            ́s company.
+          </li>
+          <li>
+            My undergraduate thesis (my major was Film Studies) was a multimedia
+            cd-rom fictional story.
+          </li>
+          <li>
+            My masters degree (on Audio Engineering) thesis was a software midi
+            controller that translated computer vision information into midi
+            messages.
+          </li>
+          <li>
+            For the last 8 years I developed a personal brand of music
+            synthesizers called “Sintetizadores para todos!” (Synthesizers for
+            everybody!) creating hardware electronic musical instruments both
+            analog and digital (programming on Arduino boards).
+          </li>
+        </ul>
         <p>
           At this point in my life I decided to go full time with my programming
           skills and interests so I started studying web development by myself;
           then I sped-up the process by enrolling on a bootcamp and graduated as
-          a Full Stack developer.
+          a Full Stack Developer.
         </p>
         <p>
-          I ́m highly motivated, love to study and undertake new projects. I ́m
-          also a creative, generous and analytical person.
+          I have a working experience of more than 20 years, where I developed
+          good communicational skills, organized groups of people and grew a
+          non-stop need for learning. Now, I'm willing to grow as a Web
+          Developer while learning new skills and working in environments that
+          allow me to develop. I´m an enthusiastic, curious and collaborative
+          person, prone towards project development, investigation and planning.
         </p>
       </div>
-      <img src="./img/coding.jpg" alt="" class="about__img" />
+      <img src="./img/studying.jpg" alt="" class="about__img" />
+      <div class="about__view">
+        <a
+          href="/docs/CV eng Andrés Vilá.pdf"
+          target="_blank"
+          class="about__link"
+          >View resume</a
+        >
+        <a
+          href="https://certificates.soyhenry.com/cert?id=982239c3-8f16-40ec-b93f-fb137391e48d"
+          target="_blank"
+          class="about__link"
+          >View certificate</a
+        >
+      </div>
     </section>
 
     <!-- Projects -->
@@ -130,9 +170,11 @@
           </a>
           <p>
             <strong>Meme Factory </strong>is a simple app made in React for
-            memes design. <br />It allows the user to select an image from a
-            variety of classic memes, add and edit text properties, and download
-            the final image.
+            memes design.
+          </p>
+          <p>
+            It allows the user to select an image from a variety of classic
+            memes, add and edit text properties, and download the final image.
           </p>
         </div>
 
@@ -148,9 +190,11 @@
 
           <p>
             <strong>NFTickets </strong>is an events marketplace based on a
-            blockchain that delivers the tickets as NFTs. <br />Users can
-            explore, search and select among musical, theatre and sport events,
-            and even upload it´s own event to the blockchain.
+            blockchain that delivers the tickets as NFTs.
+          </p>
+          <p>
+            Users can explore, search and select among musical, theatre and
+            sport events, and even upload it´s own event to the blockchain.
           </p>
         </div>
 
@@ -165,9 +209,9 @@
           </a>
           <p>
             <strong>World Wide Countries </strong>is a SPA coded with React that
-            displays basic information about world countries.<br />Consumes data
-            from a public API to build it´s own database.
+            displays basic information about world countries.
           </p>
+          <p>Consumes data from a public API to build it´s own database.</p>
         </div>
 
         <!-- Portfolio item 04 -->
@@ -177,10 +221,11 @@
           </a>
           <p>
             <strong>Iceberg synth </strong>is a digital sound synthesizer built
-            upon an Arduino using the Mozzi library.<br />The oscillator is an
-            original design, capable of producing digital noise, fully tunable
-            by the user. <br />Its sound can be shaped by a state variable
-            filter and an envelope-controlled amplifier.
+            upon an Arduino board using the Mozzi DSP library.
+          </p>
+          <p>
+            The oscillator is an original design, capable of producing digital
+            noise, fully tunable and controlled by the user.
           </p>
         </div>
       </div>
@@ -272,6 +317,60 @@
         <li class="skills__item">
           <img src="./img/dbase_icon.png" class="skills__img" />
           <p class="skills__text">dBase IV</p>
+        </li>
+      </ul>
+      <p class="skills__subtitle">
+        I have also worked on graphics, video, sound and music using these
+        software
+      </p>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img src="./img/photoshop_icon.png" class="skills__img" />
+          <p class="skills__text">Photoshop</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/premiere_icon.png" class="skills__img" />
+          <p class="skills__text">Premiere</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/illustrator_icon.png" class="skills__img" />
+          <p class="skills__text">Illustrator</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/ableton_icon.png" class="skills__img" />
+          <p class="skills__text">Ableton Live</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/protools_icon.png" class="skills__img" />
+          <p class="skills__text">ProTools</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/reaper_icon.png" class="skills__img" />
+          <p class="skills__text">Reaper</p>
+        </li>
+      </ul>
+      <p class="skills__subtitle">
+        I have professional level in these languages
+      </p>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img src="./img/spa_icon.png" class="skills__img" />
+          <p class="skills__text">Spanish</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/eng_icon.png" class="skills__img" />
+          <p class="skills__text">English</p>
+        </li>
+
+        <li class="skills__item">
+          <img src="./img/ita_icon.png" class="skills__img" />
+          <p class="skills__text">Italian</p>
         </li>
       </ul>
     </section>
