@@ -79,6 +79,9 @@ h2 {
 h3 {
   font-size: var(--fontSize-h3);
 }
+a {
+  color: inherit;
+}
 
 /* Header */
 .header {
@@ -88,7 +91,8 @@ h3 {
 }
 .nav {
   position: fixed;
-  background: var(--color-dark);
+  background: rgba(70, 70, 70, 0.95);
+  backdrop-filter: blur(10px);
   color: var(--color-light);
   top: 0;
   bottom: 0;
@@ -294,6 +298,11 @@ h3 {
 }
 .about__text p::first-letter {
   margin-left: 1em;
+}
+.about__important {
+  margin-top: 0.4em;
+  color: var(--color-accent);
+  text-shadow: var(--boxShadow);
 }
 .about__view {
   display: flex;
