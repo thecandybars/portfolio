@@ -216,6 +216,7 @@ a {
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .intro__link {
   color: var(--color-dark);
