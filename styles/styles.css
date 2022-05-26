@@ -215,7 +215,7 @@ a {
 .intro__list {
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .intro__link {
@@ -426,6 +426,7 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 .skills__item {
   list-style: none;

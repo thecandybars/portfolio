@@ -18,7 +18,7 @@ document.addEventListener("scroll", () => {
 
 function copyEmail() {
   const el = document.createElement("textarea");
-  el.value = "andr" + "esvil" + "nfante@g" + "ma" + "il.com";
+  el.value = "andr" + "esvil" + "ainfante@g" + "ma" + "il.com";
   // Set non-editable to avoid focus and move outside of view
   el.setAttribute("readonly", "");
   el.style = { position: "absolute", left: "-9999px" };
