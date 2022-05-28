@@ -252,6 +252,7 @@ a {
     align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
+    top: -4px;
     text-align: right;
     position: relative;
     left: 6em;
